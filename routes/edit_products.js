@@ -29,9 +29,6 @@ router.delete("/delete/:id", auth, (req, res) => {
 });
 
 router.post("/upload", upload.single("file"), (req, res) => {
-  // req.body.id
-  //   ? res.redirect(`/editproduct/${req.body.id}`)
-  //   : res.redirect(`/newproduct`);
   res.sendStatus(200)
 });
 
